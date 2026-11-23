@@ -1,0 +1,66 @@
+/* Custom Styles for InternHub */
+
+/* Overlap Heatmap Grid */
+.heatmap-cell {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.heatmap-cell:hover {
+    transform: translateY(-2px) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.heatmap-level-none {
+    background-color: #f1f5f9;
+    color: #94a3b8;
+    border-color: #e2e8f0;
+}
+
+.heatmap-level-low {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-color: #fecaca;
+}
+
+.heatmap-level-medium {
+    background-color: #fef3c7;
+    color: #b45309;
+    border-color: #fde68a;
+}
+
+.heatmap-level-high {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+}
+
+.heatmap-level-full {
+    background-color: #d1fae5;
+    color: #047857;
+    border-color: #a7f3d0;
+    font-weight: 700;
+}
+
+/* Modal Animation */
+.modal-overlay {
+    backdrop-filter: blur(4px);
+    transition: opacity 0.25s ease-out;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
